@@ -21,3 +21,18 @@ const myfunction = function () {
   console.log("hello  world");
 };
 console.log(typeof myobj);
+// ====================================================================
+// stack (primitive), heap ( Non-primitive)
+let myYoutubename = "ankitkherwa";
+let anothername = myYoutubename;
+anothername = "shivakherwa";
+console.log(myYoutubename);
+console.log(anothername);
+let userOne = {
+  email: "ankitswami@gmail.com",
+  upi: "ankit@ybl",
+};
+let userTwo = userOne;
+userTwo.email = "swami@gmail.com";
+console.log(userOne.email);
+console.log(userTwo.email);
